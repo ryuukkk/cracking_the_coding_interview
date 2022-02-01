@@ -1,4 +1,5 @@
 import java.io.*;
+import java.util.*;
 
 public class RotateMatrix {
     static int[][] rotateMatrix(int[][] a){
@@ -6,7 +7,7 @@ public class RotateMatrix {
 
         for(int i=0; i<a.length; i++){
             for(int j=0; j<a.length; j++){
-                b[j][a.length-i]=a[i][j];
+                b[j][a.length-1-i]=a[i][j];
             }
         }
 
@@ -15,14 +16,14 @@ public class RotateMatrix {
 
     public static void main(String[] args) throws IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        int n = br.read();
+        int n = Integer.parseInt(br.readLine());
         int a[][] = new int[n][n];
 
         for(int i=0; i<n; i++){
             for(int j=0; j<n; j++){
-                a[i][j] = br.read();
+                a[i][j] = Integer.parseInt(br.readLine());
             }
         }
-        System.out.print(rotateMatrix(a));
+        System.out.print(Arrays.deepToString(rotateMatrix(a)));
         }
 }
