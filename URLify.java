@@ -1,5 +1,4 @@
 import java.io.*;
-import java.util.*;
 
 public class URLify{
     static String urlify(String s){
