@@ -1,3 +1,10 @@
+//In an MxN matrix, if an element is zero, set its entire row and column to zeros.
+//Enter M and N in two separate lines. Third line onwards, enter one row(N elements separated by space) in each line, which goes on for M lines.
+
+//Solution Logic: Take two boolean arrays row and columns, iterate through matrix, if a zero is encountered, flag its row number as true 
+//in row array and column number as true in column array. Then set these rows and columns(which are true) to zeros in the matrix.
+//Note: Dont just set the row and column to zero as soon as you find a zero while iterating, this would lead to whole matrix being set to zeros.
+
 import java.io.*;
 import java.util.Arrays;
 

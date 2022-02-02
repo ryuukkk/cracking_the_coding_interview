@@ -1,3 +1,6 @@
+//Rotate an NxN matrix by 90 degrees.
+//Enter the size N in first line; then enter the N*N elements.
+
 import java.io.*;
 import java.util.*;
 

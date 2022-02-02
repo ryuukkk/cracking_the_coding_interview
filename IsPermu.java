@@ -1,3 +1,10 @@
+//Check if a string s is a permutation of another string t.
+//Enter two strings in two lines.
+
+//Solution Logic: Simply count the number of occurences of each character in both strings.
+//If the character count is same and both strings are equal in length, then they are permutations of each other.
+//Note : No need to find all permutations of one string, that would needlessly increase complexity.
+
 import java.io.*;
 
 public class IsPermu{
